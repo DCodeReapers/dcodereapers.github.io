@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeReaping Corner | D Code Reapers</title>
+    <base href="../../../"></base>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap, jQuery and other standard library files - online links -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <!--CAUTION: DO NOT EDIT THESE FILES. Offile Version of the above files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <!-- Added by Ram Prasad -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">  <!-- Use this css file (Main / Master CSS File) -->
+    <script type="text/javascript" src="scripts/main.js"></script> <!-- Use this JavaScript file (Main / Master JS File) -->
+    
+</head>
+<body>
+    <div class="include-navbar-coding"></div>
+	<div class="div1"><br><br><h1 class="heading">Day 1</h1></div>
+    <div class="div2">
+        <pre>
+1.What is the output of the following program?
+
+  #include < stdio.h >
+  #include < stdlib.h >
+
+  #define SIZEOF(arr) (sizeof(arr)/sizeof(arr[0]))
+
+  #define PrintInt(expr) printf("%s:%d\n",#expr,(expr))
+  int main()
+  {
+      /* The powers of 10 */
+      int pot[] = {
+          0001,
+          0010,
+          0100,
+          1000
+      };
+      int i;
+
+      for(i=0; i< SIZEOF(pot);i++)
+          PrintInt(pot[i]);
+      return 0;
+  }
+
+2.The following is the implementation of the Euclid's algorithm for finding the G.C.D(Greatest Common divisor) of two integers. 
+Explain the logic for the below implementation and think of any possible improvements on the current implementation. 
+BTW, what does scanf function return?
+
+  #include < stdio.h >
+  int gcd(int u,int v)
+  {
+      int t;
+      while(v > 0)
+      {
+          if(u > v)
+          {
+              t = u;
+              u = v;
+              v = t;
+          }
+          v = v-u;
+      }
+      return u;
+  }
+
+  int main()
+  {
+      int x,y;
+      printf("Enter x y to find their gcd:");
+      while(scanf("%d%d",&x, &y) != EOF)
+      {
+          if(x >0 && y>0)
+              printf("%d %d %d\n",x,y,gcd(x,y));
+                  printf("Enter x y to find their gcd:");
+      }
+      printf("\n");
+      return 0;
+  }
+
+Also implement a C function similar to the above to find the GCD of 4 integers.
+
+3.What's the output of the following program. (No, it's not 10!!!)
+
+  #include < stdio.h >
+  #define PrintInt(expr) printf("%s : %d\n",#expr,(expr))
+  int main()
+  {
+      int y = 100;
+      int *p;
+      p = malloc(sizeof(int));
+      *p = 10;
+      y = y/*p; /*dividing y by *p */;
+      PrintInt(y);
+      return 0;
+  }
+
+4.The following is a simple C program to read a date and print the date. Run it and explain the behaviour
+  #include < stdio.h >
+  int main()
+  {
+      int day,month,year;
+      printf("Enter the date (dd-mm-yyyy) format including -'s:");
+      scanf("%d-%d-%d",&day,&month,&year);
+      printf("The date you have entered is %d-%d-%d\n",day,month,year);
+      return 0;
+  }
+
+5.The following is a simple C program to read and print an integer. But it is not working properly. What is(are) the mistake(s)?
+
+  #include < stdio.h >
+  int main()
+  {
+      int n;
+      printf("Enter a number:\n");
+      scanf("%d\n",n);
+
+      printf("You entered %d \n",n);
+      return 0;
+  }
+
+6.The following is a simple C program which tries to multiply an integer by 5 using the bitwise operations. 
+But it doesn't do so. Explain the reason for the wrong behaviour of the program.
+
+  #include < stdio.h >
+  #define PrintInt(expr) printf("%s : %d\n",#expr,(expr))
+  int FiveTimes(int a)
+  {
+      int t;
+      t = a << 2 + a;
+      return t;
+  }
+
+  int main()
+  {
+      int a = 1, b = 2,c = 3;
+      PrintInt(FiveTimes(a));
+      PrintInt(FiveTimes(b));
+      PrintInt(FiveTimes(c));
+      return 0;
+  }
+        </pre>
+    <br><button>View Best Answer</button><br>
+    <pre>
+        Best Answer Here
+    </pre>
+    </div>
+
+
+	<!-- Footer-->
+	<div class="div1 footer"></div>
+</body>
+</html>
