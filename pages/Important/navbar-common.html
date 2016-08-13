@@ -1,0 +1,62 @@
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+ 		<!-- Main Navbar Start-->
+ 		<div class="container-fluid">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+      		</button>
+      		<a class="navbar-brand" href="./index.html" target="_self"><img src="pics/logo/dcrwhite.png" class="dcrlogo"></img></a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+      		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">e-Library<span class="caret"></span></a>
+      			<ul class="dropdown-menu">
+      				<li><a href="subjects/ada.html">Analysis & Design of Algorithms</a></li>
+      				<li><a href="subjects/co.html">Computer Organisation & Architecture</a></li>
+      				<li><a href="subjects/dcn.html">Data Communications & Networking</a></li>
+      				<li><a href="subjects/flat.html">Formal Languages & Automata Theory</a></li>
+      				<li><a href="subjects/math.html">Engineering Mathematics IV</a></li>
+      				<li><a href="subjects/mp.html">Introduction to Microprocessors</a></li>
+      			</ul>
+     	  	</li>
+    			<!-- <li><a href="memories/index.html">Memories</a></li>  -->
+    			<li><a href="achievements/index.html">Achievers</a></li> 
+          <li><a href="souvenir/index.html">Souvenir</a></li> 
+    			<li><a href="codereaping/index.html">CodeReaping Corner</a></li> 
+    			<li><a href="developers/index.html">Developers</a></li> 
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right" id="navbar-content">
+				</ul>
+    	</div>
+    </div>
+  </nav>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#navbar-content').html($('#navbar-extra').html());
+      $(".smoothscroll").anchorAnimate();
+  });
+
+    jQuery.fn.anchorAnimate = function(settings) {
+  settings = jQuery.extend({
+  speed : 700
+  }, settings); 
+
+  return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {  
+      event.preventDefault()
+      var locationHref = window.location.href
+      var elementClick = $(caller).attr("href")
+    
+      var destination = $(elementClick).offset().top - 50;
+      $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+        window.location.hash = elementClick
+      });
+      return false;
+    })
+  })
+};
+  </script>
+	<!-- Main Navbar End -->
