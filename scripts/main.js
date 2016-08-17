@@ -14,9 +14,6 @@ $(document).ready(function() {
 	// );
 
 	$("#myModal").modal({backdrop: true}); // Pop Up Window
-
-	// For Footer Include
-	$(".footer").load("pages/important/footer.html");
 	
 	// For Different Header Include
 	$(".include-navbar-coding").load("codereaping/pages/important/navbar.html");
