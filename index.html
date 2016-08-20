@@ -43,8 +43,8 @@
                 <li><a href="sem5">Semester 5</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right" id="navbar-content">
-                <li><a href="">About NIE</a></li>
-                <li><a href="">About DCR</a></li>
+                <li><a id="aboutnie" style="color:white">About NIE</a></li>
+                <li><a id="aboutdcr" style="color:white">About DCR</a></li>
                 <li><a href="pages/bagpack">Bagpack</a></li>
                 <li><a href="pages/developers">Developers</a></li>
             </ul>
@@ -93,29 +93,68 @@
                 </div>
                 <div class="row stuff-title"><a href="https://github.com/DCodeReapers/Website" title="Click To Visit" target="_blank">DCR Github<br>Repositary</a></div>
             </div>
-            <!-- <div class="col-md-2">
-                <div class="row">
-                    <img src="pics/logo/linkgrey.png" alt="Link">
-                </div>
-                <div class="row stuff-title"><a href="https://sites.google.com/site/dcodereaperssem1" title="Click To Visit" target="_blank">DCR Sem 1 Website</a></div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <img src="pics/logo/linkgrey.png" alt="Link">
-                </div>
-                <div class="row stuff-title"><a href="https://sites.google.com/site/dcodereaperssem3" title="Click To Visit" target="_blank">DCR Sem 3 Website</a></div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <img src="pics/logo/linkgrey.png" alt="Link">
-                </div>
-                <div class="row stuff-title"><a href="https://sites.google.com/site/niecsed14" title="Click To Visit" target="_blank">DCR Sem 4 Website (Old)</a></div>
-            </div> -->
         </div>
     </div>
 
-    <div class="div1 footer"></div>
+    <div class="div1 footer">
+    <div class="col-md-1"></div>
+    <div class="col-md-6" id="disclaimer">
+        <h4><center>Disclaimer</center></h4>
+        The information contained in this website is for us all and is provided by 'D Code Reapers' which is made by us all and hence together it must be our endeavour to keep the resources and the design up to date ,correct and valid in every sense. Resources such as videos,e-books,notes,any text files shared on this website makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability. Any reliance you place on such information is therefore strictly at your own risk.<br> 
+        Also, 'D Code Reapers' takes great pride in crediting the original authors of the resources and encourages them to contribute in future. All the resources made available on this website are free of charge and no purchase sum is asked of the user or of or by the author.<br><br>
+    </div>
+    <div class="text-center"><br><br><Br>
+        <h4>Copyright © D Code Reapers</h4>
+        <h5>Department of Computer Science & Engineering</h5>
+        <h5>The National Institute of Engineering, Mysuru</h5>
+    </div>
+</div>
 
+<!-- Modal -->
+<div id="aboutniemodal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About NIE Mysuru</h4>
+      </div>
+      <div class="modal-body">
+        <p>The National Institute of Engineering (NIE), one of the oldest private engineering colleges of the country, was started in the year 1946. The engineers, professors and other good men who labored to establish NIE are many. Their contribution to the cause of technical education is equally noble, whether it has been large or small, whether by money or service. NIE owes it glory to all these Men with a Mission. Among the sixteen eminent founders, three engineers Sri S.Ramaswamy, Retd. Superintending Engineer, Mysore PWD, Sri D.V.Narasimha Rao, Retd. Chief Engineer, Mysore State Railways and Sri T.Rama Rao, Retd. Executive Engineer of Mysore PWD, took lead in establishing NIE, the Temple of Learning. It has completed 69 years of fruitful existence.<br>
+        The Institution began by offering a Diploma course in Civil Engineering, but its progress was rapid and soon AMIE and later B.E. in various disciplines were started. In 1956, the State and Union Governments recognised NIE as one of the institutions listed for development during the second and subsequent five-year plans. In 1958-59, NIE got private-aided institutions status under grant-in-aid code of Karnataka Government.<br><br>
+        <h4>About Computer Science Department</h4>
+        The Department of Computer Science & Engineering, was started in the year 1983 with BE programme. It has grown by leaps and bounds over the last three decades in terms of infrastructure, courses and faculty. The department has four Professors, five Associate Professors , Nine Assistant Professors and eight Lecturers. The department has received the World Bank grant under TEQIP which has been utilised for enhancing the facilities of the department and also for the faculty development programmes. The department is a recognized centre for academic research and has produced Doctorates. It has qualified professors as research guide and 17 candidates are persuing Ph.D.<br><br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="http://www.nie.ac.in/" target="_blank"><button type="button" class="btn btn-default pull-left">Go To NIE Website</button></a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Continue With DCR Website</button>
+      </div>
+    </div>
+   </div>
+ </div>
+
+<!-- Modal -->
+<div id="aboutdcrmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About D Code Reapers</h4>
+      </div>
+      <div class="modal-body">
+        <p>Working On Content
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Got It</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
  <style>
     .dcrbanner{
@@ -179,6 +218,13 @@
             document.getElementsByClassName("sample1")[6].style.height =
             document.getElementsByClassName("sample1")[7].style.height =
             document.getElementsByClassName("sample1")[8].style.height = window.innerHeight + "px";
+
+            $("#aboutnie").click(function(){
+                $("#aboutniemodal").modal();
+            });
+            $("#aboutdcr").click(function(){
+                $("#aboutdcrmodal").modal();
+            });
         });
     </script>
 </html>
