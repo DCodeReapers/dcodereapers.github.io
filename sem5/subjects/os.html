@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> OS | Sem 5 | D Code Reapers </title>
+    <base href="../../">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap, jQuery and other standard library files - online links -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <!--CAUTION: DO NOT EDIT THESE FILES. Offile Version of the above files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <!-- Common Files)-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <!-- Uncommon Files -->
+    <link rel="stylesheet" type="text/css" href="sem3/css/main.css">
+    <script type="text/javascript" src="sem3/scripts/main.js"></script>
+</head>
+<body>
+	<div class="include-navbar-subject"></div>
+	<div id="navbar-extra">
+		<!-- Subject Name -->
+	</div>
+
+	<div class="row">
+		<!-- Change the pic to your subject related , just change the src to your pic's scr -->
+		<img src="sem5/pics/subjects/os1.jpg" class="img-responsive frontpic">
+	</div>
+
+	<div class="div1" id="syllabus">
+		<h1 class="heading">Syllabus</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<ol>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Introduction, Processes and Threads</a>
+        					<ul class="subtopics">
+            					<li>Introduction, General structure of a hardwired control unit</li>
+									<li>WHAT IS AN OPERATING SYSTEM? : The Operating system as an extended machine
+									<li>The Operating system as a resource manager. 
+									<li>PROCESSES: The process model, Process creation, Process termination,
+									<li>Process hierarchies, Process states. 
+									<li>THREADS: The thread model, Thread usage, implementing threads in user space
+									<li>Implementing threads in the kernel, Hybrid implementations
+									<li>Scheduler activations. SCHEDULING: Introduction to scheduling
+									<li>Scheduling in interactive systems
+									<li> SLE:Thread scheduling</li>
+            					
+        					</ul>
+					
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Interprocess Communication</a>
+        					<ul class="subtopics">
+            					<li>Race conditions
+							<li>Critical regions
+							<li>Mutual exclusion with busy waiting,
+							<li>Sleep and wakeup
+							<li>Semaphores
+							<li>Mutexes	
+							<li>Monitors, Message passing. 
+							<li>CLASSICAL IPC PROBLEMS: The dining philosophers problem
+							<li>The readers and writers problem.
+							<li>Memory Management: Monoprogramming without swapping or paging
+							<li>Multiprogramming with fixed partitions
+							<li>Modeling multiprogramming
+							<li>Relocation and protection. 
+							<li>SLE: Analysis of multiprogramming system performance</li>
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Memory Management ,Page replacemets,Algorithms & Design Issues</a>
+        					<ul class="subtopics">
+            					<li>SWAPPING: Memory management with bitmaps
+								<li>Memory management with linked lists. 
+								<li>VIRTUAL MEMORY: Paging, Page tables
+								<li>TLBs—Translation Look aside Buffers, Inverted page tables. 
+								<li>PAGE REPLACEMENT ALGORITHMS: The optimal page replacement algorithm
+								<li>The not recently used page replacement algorithm
+								<li>The first-in first-out
+								<li>The second chance page replacement algorithm
+								<li>The clock page replacement algorithm
+								<li>The least recently used, Simulating LRU in software.
+								<li>MODELING PAGE REPLACEMENT ALGORITHMS: Stack algorithms. 
+								<li>SLE: Belady’s anomaly</li>
+        				   </ul>
+					</li>
+				</ol>
+			</div>
+			<div class="col-md-4">
+				<ol start="4">
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Design Issues For Paging System</a>
+        					<ul class="subtopics">
+            					<li>Local versus Global allocation policies
+								<li>Load control, Page size, Separate instruction and data spaces
+								<li>Shared pages, Cleaning policy, Virtual memory interface
+								<li>IMPLEMENTATION ISSUES: Operating system involvement with paging, Page fault handling
+								<li>Instruction backup, Backing store,
+								<li>Separation of policy and segmentation
+								<li> SEGMENTATION: Implementation of pure segmentation
+								<li>Segmentation with paging. 
+								<li>SLE: Locking pages in memory.</li>
+            					
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Input / Output</a>
+        					<ul class="subtopics">
+            					<li>I/O SOFTWARE LAYERS: Interrupt handlers
+								<li>Device drivers, Device-Independent I/O software.
+								<li>FILE SYSTEMS DIRECTORIES: Single-Level directory systems, Two-level directory systems
+								<li>Hierarchical directory systems, FILE SYSTEM IMPLEMENTATION : File system layout, Implementing files
+								<li>Implementing directories, Shared files, Disk space management
+								<li>File system performance, Log-Structured file systems.
+								<li> SLE: File system reliability</li>
+            					            					
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Deadlocks</a>
+        					<ul class="subtopics">
+            					<li>INTRODUCTION TO DEADLOCKS: Conditions for deadlock, Deadlock modeling. 
+								<li>THE OSTRICH ALGORITHM, DEADLOCK DETECTION AND RECOVERY: Deadlock detection with one resource of each type
+								<li>Deadlock detection with multiple resource of each type
+								<li>Recovery from deadlock, DEADLOCK AVOIDANCE: Resource trajectories
+								<li>Safe and Unsafe States, The Banker’s algorithm for a single resource
+								<li>The banker’s algorithm for multiple resources
+								<li>DEADLOCK PREVENTION: Attacking the mutual exclusion condition
+								<li>Attacking the Hold and Wait condition, Attacking the No Preemption condition. 
+								<li>SLE: Attacking the Circular Wait condition.</li>
+        					</ul>
+					</li>
+				</ol>	
+			</div>
+			 <div class="col-md-4">
+				<ul>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">First Internal</a>
+        					<ul class="subtopics">
+            					<li>Not Yet Announced</li>
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Mid Semster</a>
+        					<ul class="subtopics">
+            					<li>Not Yet Announced</li>
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Makeup Internal</a>
+        					<ul class="subtopics">
+            					<li>Not Yet Announced</li>
+        					</ul>
+					</li>
+				</ul>	
+			</div> 
+		</div> 
+	</div>	
+	<div class="div2" id="notes">
+		<h1 class="heading">Notes</h1>
+		<div class="row commingsoon">Coming soon......</div>
+		<!--<div class="row">
+			<div class="col-md-2">
+				<div class="row">
+					<a href="https://drive.google.com/uc?export=download&id="><img src="pics/logo/notes.png" title="Download" alt="Download"></a>
+				</div>
+				<div class="row stuff-title"><a href="https://drive.google.com/open?id=" title="View Online">Titles Here</a></div>
+			</div>
+		</div>
+		<div class="viewmore">
+			<div class="row extrastuff">
+				<div class="col-md-2">
+					<div class="row">
+						<a href=""><img src="pics/logo/notes.png" title="Download" alt="Download"></a>
+					</div>
+					<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	
+
+	<div class="div1" id="ebooks">
+		<h1 class="heading">e-Books</h1>		
+		<div class ="row commingsoon"> Coming Soon ....</div> 
+			<!--<div class="row">
+				<div class="col-md-2">
+				<div class="row">
+					<a href=""><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
+				</div>
+				<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+				</div>
+			<\div>-->
+		</div>
+		
+	</div>
+
+	<div class="div2" id="videos">
+		<h1 class="heading">Videos</h1>
+		<div class="row commingsoon"> Coming Soon ...</div>
+		<!-- <div class="row">
+			<div class="col-md-2">
+				<div class="row">
+					<a href=""><img src="pics/logo/video.png" title="Download" alt="Download"></a>
+				</div>
+				<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+			</div>
+		</div> -->	
+	</div>
+
+	<div class="div1" id="questionpapers">
+		<h1 class="heading">Question Papers</h1>
+		<div class="row commingsoon">Coming soon....</div>
+		<div class="row">	
+			<!-- <div class="col-md-2">
+				<div class="row">
+					<a href=""><img src="pics/logo/questionpaper.png" title="Download" alt="Download"></a>
+				</div>
+				<!-- <div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+			</div> -->
+		</div>	
+	</div>	
+
+<!-- 	<div class="div2" id="rta">
+		<h1 class="heading">Real Time Application</h1>
+	</div>
+ -->
+
+	<div class="div2 footer"></div>
+
+</body>
+</html>

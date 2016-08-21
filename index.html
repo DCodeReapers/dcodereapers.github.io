@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>D Code Reapers | NIE Mysore</title>
+    <title>D Code Reapers | Dept of Computer Science &amp; Engineering | NIE Mysore</title>
     <base href="./">
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap, jQuery and other standard library files - online links -->
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!--     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
-
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ -->
     <!--CAUTION: DO NOT EDIT THESE FILES. Offile Version of the above files -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
@@ -19,79 +19,199 @@
 
     <!-- Common Files)-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
-    <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 100%;
-
-        }
-        #myCarousel{
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: -1;
-        }
-        h1{
-            font-size: 6em;
-            color: white;
-            margin-top: 10%;
-        }
-        @media screen and (max-width: 760px) {
-            h1{
-                font-size: 3em;
-            }
-        }
-        .btn{
-            font-size: 20px;
-            padding: 10px 35px; 
-
-        }
-        
-  </style>
-
-    
 </head>
 <body>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="navbar-fixed-top">
+        <div class="row dcrbanner">
+            <div class="col-sm-1"><a href="./"><img src="pics/logo/dcrblack.png" class="dcrlogo"></img></a></div>
+            <div class="col-sm-3 dcrname">D Code Reapers</div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-3 niename">Dept. of Computer Science &amp; Engineering<br>The National Institute of Engineering, Mysuru</div>
+            <div class="col-sm-1"><img src="pics/logo/niepng.png" class="nielogo"></img></div>
+        </div>
+        <nav class="navbar navbar-inverse" style="border-radius:0">
+        <div class="container-fluid"><div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="./" target="_self"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="sem1">Semester 1</a></li>
+                <li><a href="sem3">Semester 3</a></li> 
+                <li><a href="sem5">Semester 5</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-content">
+                <li><a id="aboutnie" style="color:white; cursor:pointer;">About NIE</a></li>
+                <li><a id="aboutdcr" style="color:white; cursor:pointer;">About DCR</a></li>
+                <li><a href="pages/bagpack">Bagpack</a></li>
+                <li><a href="pages/developers">Developers</a></li>
+            </ul>
+        </div></div>
+        </nav>
+    </div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img class="sample1" src="pics/portal/1.jpg" alt="Chania">
-      </div>
-
-      <div class="item">
-        <img class="sample1" src="pics/portal/2.jpg" alt="Chania">
-      </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"><img class="sample1" src="pics/portal/1.jpg" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/2.jpg" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/3.jpg" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/4.jpg" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/5.png" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/6.jpg" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/7.png" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/8.jpg" alt="Slider Wallpaper"></div>
+            <div class="item"><img class="sample1" src="pics/portal/9.png" alt="Slider Wallpaper"></div>
+        </div>
+    </div>
     
-      <div class="item">
-        <img class="sample1" src="pics/portal/3.jpg" alt="Flower">
+    <div class="div1" id="notification">
+        <h1 class="heading">Notifications</h1>
+        <ul>
+            <li>Form To Join D Code Reapers Developers Team - <a href="https://goo.gl/forms/9LpjlQFMYZZ2EVw02"  target="_blank">Click Here</a>
+        </ul>
+    </div>
+    <div class="div2" id="quicklinks">
+        <h1 class="heading">Quick Links</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row">
+                    <img src="pics/logo/linkgrey.png" alt="Link">
+                </div>
+                <div class="row stuff-title"><a href="http://www.nie.ac.in.com" title="Click To Visit" target="_blank">NIE Website</a></div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <img src="pics/logo/linkgrey.png" alt="Link">
+                </div>
+                <div class="row stuff-title"><a href="https://niealumni.org" title="Click To Visit" target="_blank">NIE Alumni Portal</a></div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <img src="pics/logo/linkgrey.png" alt="Link">
+                </div>
+                <div class="row stuff-title"><a href="https://github.com/DCodeReapers/Website" title="Click To Visit" target="_blank">DCR Github<br>Repositary</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div1 footer">
+    <div class="col-md-1"></div>
+    <div class="col-md-6" id="disclaimer">
+        <h4><center>Disclaimer</center></h4>
+        The information contained in this website is for us all and is provided by 'D Code Reapers' which is made by us all and hence together it must be our endeavour to keep the resources and the design up to date ,correct and valid in every sense. Resources such as videos,e-books,notes,any text files shared on this website makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability. Any reliance you place on such information is therefore strictly at your own risk.<br> 
+        Also, 'D Code Reapers' takes great pride in crediting the original authors of the resources and encourages them to contribute in future. All the resources made available on this website are free of charge and no purchase sum is asked of the user or of or by the author.<br><br>
+    </div>
+    <div class="text-center"><br><br><Br>
+        <h4>Copyright © D Code Reapers</h4>
+        <h5>Department of Computer Science & Engineering</h5>
+        <h5>The National Institute of Engineering, Mysuru</h5>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="aboutniemodal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About NIE Mysuru</h4>
+      </div>
+      <div class="modal-body">
+        <p>The National Institute of Engineering (NIE), one of the oldest private engineering colleges of the country, was started in the year 1946. The engineers, professors and other good men who labored to establish NIE are many. Their contribution to the cause of technical education is equally noble, whether it has been large or small, whether by money or service. NIE owes it glory to all these Men with a Mission. Among the sixteen eminent founders, three engineers Sri S.Ramaswamy, Retd. Superintending Engineer, Mysore PWD, Sri D.V.Narasimha Rao, Retd. Chief Engineer, Mysore State Railways and Sri T.Rama Rao, Retd. Executive Engineer of Mysore PWD, took lead in establishing NIE, the Temple of Learning. It has completed 69 years of fruitful existence.<br>
+        The Institution began by offering a Diploma course in Civil Engineering, but its progress was rapid and soon AMIE and later B.E. in various disciplines were started. In 1956, the State and Union Governments recognised NIE as one of the institutions listed for development during the second and subsequent five-year plans. In 1958-59, NIE got private-aided institutions status under grant-in-aid code of Karnataka Government.<br><br>
+        <h4>About Computer Science Department</h4>
+        The Department of Computer Science & Engineering, was started in the year 1983 with BE programme. It has grown by leaps and bounds over the last three decades in terms of infrastructure, courses and faculty. The department has four Professors, five Associate Professors , Nine Assistant Professors and eight Lecturers. The department has received the World Bank grant under TEQIP which has been utilised for enhancing the facilities of the department and also for the faculty development programmes. The department is a recognized centre for academic research and has produced Doctorates. It has qualified professors as research guide and 17 candidates are persuing Ph.D.<br><br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="http://www.nie.ac.in/" target="_blank"><button type="button" class="btn btn-default pull-left">Go To NIE Website</button></a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Continue With DCR Website</button>
+      </div>
+    </div>
+   </div>
+ </div>
+
+<!-- Modal -->
+<div id="aboutdcrmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About D Code Reapers</h4>
+      </div>
+      <div class="modal-body">
+        <p>Working On Content
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Got It</button>
       </div>
     </div>
 
-    </div>
-    <center><h1>D Code Reapers</h1></center>
-    <div class="row" style="margin-top:20%;">
-        <div class="col-md-3"></div>
-        <div class="col-md-2 text-center">
-            <a href="/sem1" class="btn btn-info" role="button">Semester 1</a><br><br>
-        </div>
-        <div class="col-md-2 text-center">
-            <a href="/sem3" class="btn btn-info" role="button">Semester 3</a><br><br>
-        </div>
-        <div class="col-md-2 text-center">
-            <a href="/sem5" class="btn btn-info" role="button">Semester 5</a><br><br>
-        </div>
-   </div>
-  
-
+  </div>
+</div>
 </body>
+ <style>
+    .dcrbanner{
+        padding: 10px;
+        opacity: 0.7;
+        background: white;
+    }
+    .dcrbanner:hover{
+        opacity: 1;
+    }
+    .dcrname{
+        font-size: 35px;
+        color: black;
+        text-align: center;
+    }
+    .dcrlogo{
+        margin-top: 13px;
+        margin-left: 41%;
+    }
+    .nielogo{
+        margin-top: 5px;
+        width: 40px;
+        margin-left: 44%;
+    }
+    .niename{
+        margin-top: 5px;
+        font-size: 15px;
+        color: black;
+        text-align: center;
+    }
+    .semname{
+        color: white;
+        font-size: 18px;
+        width: 30%;
+    }
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img , #myCarousel {
+        width: 100%;
+    }
+  </style>
 <script type="text/javascript">
         $(document).ready(function() {
             document.getElementsByClassName("sample1")[0].style.height =
+            document.getElementsByClassName("sample1")[1].style.height =
             document.getElementsByClassName("sample1")[2].style.height =
-            document.getElementsByClassName("sample1")[1].style.height = window.innerHeight + "px";
+            document.getElementsByClassName("sample1")[3].style.height =
+            document.getElementsByClassName("sample1")[4].style.height =
+            document.getElementsByClassName("sample1")[5].style.height =
+            document.getElementsByClassName("sample1")[6].style.height =
+            document.getElementsByClassName("sample1")[7].style.height =
+            document.getElementsByClassName("sample1")[8].style.height = window.innerHeight + "px";
+
+            $("#aboutnie").click(function(){
+                $("#aboutniemodal").modal();
+            });
+            $("#aboutdcr").click(function(){
+                $("#aboutdcrmodal").modal();
+            });
         });
     </script>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> CD | Sem 5 |D Code Reapers</title>
+    <title> DUOS | Sem 5 |D Code Reapers</title>
     <base href="../../">
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@
 
 	<div class="row">
 		<!-- Change the pic to your subject related , just change the src to your pic's scr -->
-		<img src="sem5/pics/subjects/cd.jpg" class="img-responsive frontpic">
+		<img src="sem5/pics/subjects/duos.jpg" class="img-responsive frontpic">
 	</div>
 
 	<div class="div1" id="syllabus">
@@ -41,65 +41,136 @@
 		<div class="row">
 			<div class="col-md-4">
 				<ol>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Introduction And Scanner</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">UNIX System Overview</a>
         					<ul class="subtopics">
-        					<li>The Translation Process
-        					<li>The Scanning Process
-        					<li>The TINY Language
-        					<li>Implementation of a TINY Scanner
-							<li>SLE:Finite Automata
+        					<li>Introduction
+        					<li>Unix architecture
+        					<li>Logging in
+        					<li>Files and Directories
+        					<li>Input and Output
+        					<li>Programs and Processes
+        					<li>User Identification
+        					<li>System calls and Library Functions  
+							<li>File I/O Introduction
+							<li>File Descriptors
+							<li>open Function
+							<li>create Function
+							<li>close Function
+							<li>lseek Function
+							<li>read Function
+							<li>write Function
+							<li>File Sharing
+							<li>Atomic Operations
+							<li>dup and dup2 
+							<li>SLE: UNIX Standardization, UNIX System Implementations
+        					
         					</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Context-Free Grammers And Parsing</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Files and Directories</a>
         					<ul class="subtopics">
-        					<li><li>The Parsing Process
-        					<li>ParseTrees and Abstract Syntax Trees 
-							<li>Extended Notations: EBNF and SyntaxDiagrams
-							<li>Syntax of the TINY language.                             
-							<li>SLE : context free grammar, Ambiguity.         
+        					<li>Introduction
+        					<li>stat, fstat and lstat Functions
+							<li>Set-User-ID and Set-Group-ID
+							<li>Ownership of New Files and Directories
+							<li>access Function
+							<li>umask Function
+ 							<li>chmod and fchmod Functions
+ 							<li>Sticky Bit
+ 							<li>chown,fchown and lchown Functions
+ 							<li>File Size
+ 							<li>File Truncation
+ 							<li>File Systems
+ 							<li>link, unlink, remove, and rename Functions
+ 							<li>Symbolic Links
+ 							<li>symlink and readlink Functions
+ 							<li>File Times
+ 							<li>utime Function
+ 							<li>SLE: File Types, File Access Permissions
+        					         
 							</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Top-Down Parsing</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Process Environment</a>
         					<ul class="subtopics">
-            					<li>Top-Down Parsing by Recursive-Descent
-            					<li>LL(1) Parsing
-            					<li>First and Follow Sets
-            					<li>A Recursive-Descent Parser for the TINY Language     
-            					<li>SLE: Implementation of Recursive-Descent Parser for the TINY Language. 
+            					<li>Introduction
+            					<li>main Function
+            					<li>Process Termination
+            					<li>Command-Line Arguments
+            					<li>Environment List
+            					<li>Memory Layout of a C Program, Shared Libraries 
+            					<li>Memory Allocation Environment Variables
+            					<li>setjmp and longjmp Functions
+            					<li>getr limit and setr limit Functions
+            					<li><b>Process Control:</b></li>
+            					<li>Introduction
+            					<li>Process Identifiers
+            					<li>fork Function
+            					<li>vfork Function
+            					<li>exit Functions
+            					<li>wait and waitpid Functions
+            					<li>waitid Function
+            					<li>wait3 and wait4 Functions
+            					<li>SLE: Race Conditions, exec Functions, Changing User IDs and Group IDs.  
+
+
         					</ul>
 					</li>
 				</ol>
 			</div>
 			<div class="col-md-4">
 				<ol start="4">
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Semantic Analysis</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Signals</a>
         					<ul class="subtopics">
-            					<li>Attributes and Attribute Grammar
-            					<li>The Symbol Table
-            					<li>Data Types and Type Checking 
-            					<li>A Semantic Analyzer for the TINY Language
-								<li>SLE: Algorithms for Attribute Computation 
+            					<li>Introduction
+            					<li>Signal Concepts
+            					<li>signal Function
+            					<li>Reentrant Functions
+            					<li>Reliable Signal Terminology and Semantics
+            					<li>kill and raise Functions
+            					<li>alarm and pause Functions
+            					<li>Signal Sets
+            					<li>sigprocmask Function
+            					<li>sigpending Function
+            					<li>sigaction Function
+            					<li>sigsetjmp and siglongjmp Functions
+            					<li>sigsuspend Function
+            					<li>SLE: Unreliable signals, Interrupted System calls 
         					</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Runtime Environment</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Threads</a>
         					<ul class="subtopics">
-            					<li>Memory Organization During Program Execution
-            					<li>Fully Static Runtime Environment 
-            					<li>Stack-Based Runtime Environment
-								<li>Parameter Passing Mechanisms
-								<li>Runtime Environment for the TINY Language 
-								<li>SLE: Dynamic Memory Runtime Environment.
+        					<li>Introduction
+        					<li>Thread Concepts
+        					<li>Thread Identification
+        					<li>Thread Creation
+        					<li>Thread Termination
+        					<li>Thread Synchronization.
+        					<li><b>Daemon Processes:</b>
+        					<li>Introduction
+        					<li>Daemon Characteristics
+        					<li>Coding Rules
+        					<li>Error Logging
+        					<li>SLE: Single-Instance Daemons, Daemon Conventions. 
+            					
         					</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Code Generation</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics"> Interprocess Communication</a>
         					<ul class="subtopics">
-        					<li>Intermediate Code and Data Structures for Code Generation
-        					<li>Code Generation of Data Structure References
-        					<li>Code Generation of Control Statements and Logical Expressions
-        					<li>Code Generation of Procedure and Function Calls
-        					<li>TM: A simple Target Machine
-        					<li>A Code generator for the TINY Language 
-							<li>SLE: Basic Code Generation Techniques
+        					<li>Introduction
+        					<li>Pipes, popen and pclose Functions
+        					<li>Coprocesses
+        					<li>FIFOs
+        					<li>XSI IPC
+        					<li>Message Queues
+        					<li>Semaphores
+        					<li>Shared Memory
+        					<li>Client-Server Properties
+        					<li><b>Network IPC:</b>
+        					<li>Sockets Introduction
+        					<li>Socket Descriptors
+        					<li>Addressing
+        					<li>Connection Establishment
+        					<li>SLE: Data Transfer, Socket Options. 
+        					
             					
         					</ul>
 					</li>
@@ -116,7 +187,7 @@
         					</ul>
 					</li>
 					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Mid Semster</a>
-        				 	<ul class="subtopics">
+        					<ul class="subtopics">
             					<!-- <li>Topic1 Name Here</li>
             					<li>Topic2 Name Here</li>
             					<li>Topic3 Name Here</li> -->
