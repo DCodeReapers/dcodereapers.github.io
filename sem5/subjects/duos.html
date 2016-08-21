@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> DUOS | Sem 5 |D Code Reapers</title>
+    <base href="../../">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap, jQuery and other standard library files - online links -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <!--CAUTION: DO NOT EDIT THESE FILES. Offile Version of the above files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <!-- Common Files)-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <!-- Uncommon Files -->
+    <link rel="stylesheet" type="text/css" href="sem5/css/main.css">
+    <script type="text/javascript" src="sem5/scripts/main.js"></script>
+</head>
+<body>
+	<div class="include-navbar-subject"></div>
+	<div id="navbar-extra">
+		<!-- Subject Name -->
+	</div>
+
+	<div class="row">
+		<!-- Change the pic to your subject related , just change the src to your pic's scr -->
+		<img src="sem5/pics/subjects/duos.jpg" class="img-responsive frontpic">
+	</div>
+
+	<div class="div1" id="syllabus">
+		<h1 class="heading">Syllabus</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<ol>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">UNIX System Overview</a>
+        					<ul class="subtopics">
+        					<li>Introduction
+        					<li>Unix architecture
+        					<li>Logging in
+        					<li>Files and Directories
+        					<li>Input and Output
+        					<li>Programs and Processes
+        					<li>User Identification
+        					<li>System calls and Library Functions  
+							<li>File I/O Introduction
+							<li>File Descriptors
+							<li>open Function
+							<li>create Function
+							<li>close Function
+							<li>lseek Function
+							<li>read Function
+							<li>write Function
+							<li>File Sharing
+							<li>Atomic Operations
+							<li>dup and dup2 
+							<li>SLE: UNIX Standardization, UNIX System Implementations
+        					
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Files and Directories</a>
+        					<ul class="subtopics">
+        					<li>Introduction
+        					<li>stat, fstat and lstat Functions
+							<li>Set-User-ID and Set-Group-ID
+							<li>Ownership of New Files and Directories
+							<li>access Function
+							<li>umask Function
+ 							<li>chmod and fchmod Functions
+ 							<li>Sticky Bit
+ 							<li>chown,fchown and lchown Functions
+ 							<li>File Size
+ 							<li>File Truncation
+ 							<li>File Systems
+ 							<li>link, unlink, remove, and rename Functions
+ 							<li>Symbolic Links
+ 							<li>symlink and readlink Functions
+ 							<li>File Times
+ 							<li>utime Function
+ 							<li>SLE: File Types, File Access Permissions
+        					         
+							</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Process Environment</a>
+        					<ul class="subtopics">
+            					<li>Introduction
+            					<li>main Function
+            					<li>Process Termination
+            					<li>Command-Line Arguments
+            					<li>Environment List
+            					<li>Memory Layout of a C Program, Shared Libraries 
+            					<li>Memory Allocation Environment Variables
+            					<li>setjmp and longjmp Functions
+            					<li>getr limit and setr limit Functions
+            					<li><b>Process Control:</b></li>
+            					<li>Introduction
+            					<li>Process Identifiers
+            					<li>fork Function
+            					<li>vfork Function
+            					<li>exit Functions
+            					<li>wait and waitpid Functions
+            					<li>waitid Function
+            					<li>wait3 and wait4 Functions
+            					<li>SLE: Race Conditions, exec Functions, Changing User IDs and Group IDs.  
+
+
+        					</ul>
+					</li>
+				</ol>
+			</div>
+			<div class="col-md-4">
+				<ol start="4">
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Signals</a>
+        					<ul class="subtopics">
+            					<li>Introduction
+            					<li>Signal Concepts
+            					<li>signal Function
+            					<li>Reentrant Functions
+            					<li>Reliable Signal Terminology and Semantics
+            					<li>kill and raise Functions
+            					<li>alarm and pause Functions
+            					<li>Signal Sets
+            					<li>sigprocmask Function
+            					<li>sigpending Function
+            					<li>sigaction Function
+            					<li>sigsetjmp and siglongjmp Functions
+            					<li>sigsuspend Function
+            					<li>SLE: Unreliable signals, Interrupted System calls 
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Threads</a>
+        					<ul class="subtopics">
+        					<li>Introduction
+        					<li>Thread Concepts
+        					<li>Thread Identification
+        					<li>Thread Creation
+        					<li>Thread Termination
+        					<li>Thread Synchronization.
+        					<li><b>Daemon Processes:</b>
+        					<li>Introduction
+        					<li>Daemon Characteristics
+        					<li>Coding Rules
+        					<li>Error Logging
+        					<li>SLE: Single-Instance Daemons, Daemon Conventions. 
+            					
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics"> Interprocess Communication</a>
+        					<ul class="subtopics">
+        					<li>Introduction
+        					<li>Pipes, popen and pclose Functions
+        					<li>Coprocesses
+        					<li>FIFOs
+        					<li>XSI IPC
+        					<li>Message Queues
+        					<li>Semaphores
+        					<li>Shared Memory
+        					<li>Client-Server Properties
+        					<li><b>Network IPC:</b>
+        					<li>Sockets Introduction
+        					<li>Socket Descriptors
+        					<li>Addressing
+        					<li>Connection Establishment
+        					<li>SLE: Data Transfer, Socket Options. 
+        					
+            					
+        					</ul>
+					</li>
+				</ol>	
+			</div>
+			<div class="col-md-4">
+				<ul>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">First Internal</a>
+
+        					<ul class="subtopics">
+            					<!-- <li>Topic1 Name Here</li>
+            					<li>Topic2 Name Here</li>
+            					<li>Topic3 Name Here</li> -->
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Mid Semster</a>
+        					<ul class="subtopics">
+            					<!-- <li>Topic1 Name Here</li>
+            					<li>Topic2 Name Here</li>
+            					<li>Topic3 Name Here</li> -->
+        					</ul>
+					</li>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Makeup Internal</a>
+        					<ul class="subtopics">
+            					<!-- <li>Topic1 Name Here</li>
+            					<li>Topic2 Name Here</li>
+            					<li>Topic3 Name Here</li> --> 
+        					</ul>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>	
+	<div class="div2" id="notes">
+		<h1 class="heading">Notes</h1>
+		<div class="row commingsoon">Coming Soon...</div>
+		<div class="row">
+			<!-- <div class="col-md-2">
+				<div class="row">
+					<a href="https://drive.google.com/uc?export=download&id="><img src="pics/logo/notes.png" title="Download" alt="Download"></a>
+				</div>
+				<div class="row stuff-title"><a href="https://drive.google.com/open?id=" title="View Online">Titles Here</a></div>
+			</div> -->
+		</div>
+		<div class="viewmore">
+			<div class="row extrastuff">
+				<div class="col-md-2">
+					<div class="row">
+						<a href=""><img src="pics/logo/notes.png" title="Download" alt="Download"></a>
+					</div>
+					<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="div1" id="ebooks">
+		<h1 class="heading">e-Books</h1>
+		<div class="row commingsoon">Coming Soon...</div>
+		<!-- <div class="row">
+			 <div class="col-md-2">
+				<div class="row">
+					<a href=""><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
+				</div> 
+				<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+			</div> -->
+		</div>	
+	</div>
+
+	<div class="div2" id="videos">
+		<h1 class="heading">Videos</h1>
+		<div class="row commingsoon">Coming Soon...</div>
+		<div class="row">
+			<!-- <div class="col-md-2">
+				<div class="row">
+					<a href=""><img src="pics/logo/video.png" title="Download" alt="Download"></a>
+				</div>
+				<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+			</div> -->
+		</div>	
+	</div>
+
+	<div class="div1" id="questionpapers">
+		<h1 class="heading">Question Papers</h1>
+		<div class="row commingsoon">Coming Soon...</div>
+		<div class="row">
+			<!-- <div class="col-md-2">
+				<div class="row">
+					<a href=""><img src="pics/logo/questionpaper.png" title="Download" alt="Download"></a>
+				</div>
+				<div class="row stuff-title"><a href="" title="View Online">Titles Here</a></div>
+			</div> -->
+		</div>	
+	</div>
+
+<!-- 	<div class="div2" id="rta">
+		<h1 class="heading">Real Time Application</h1>
+	</div>
+ -->
+
+	<div class="div2 footer"></div>
+
+</body>
+</html>
