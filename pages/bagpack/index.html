@@ -22,7 +22,37 @@
 
 </head>
 <body>
-	<div class="include-navbar-common"></div>
+	<div class="navbar-fixed-top">
+        <div class="row dcrbanner">
+            <div class="bigscreen">
+                <div class="col-sm-1"><a href="./"  target="_self"><img src="pics/logo/dcrblack.png" class="dcrlogo"></a></div>
+                <div class="col-sm-4 dcrname">D Code Reapers</div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4 niename">An Initiative By Students of <br> CSE 2014- 2018 Batch</div>
+                <!-- <div class="col-sm-1"><img src="pics/logo/niepng.png" class="nielogo"></div> -->
+            </div>
+            <div class="smallscreen">
+                <a href="./"  target="_self"><img src="pics/logo/dcrblack.png" class="dcrlogo"></a><span class="dcrname">D Code Reapers</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse" style="border-radius:0">
+        <div class="container-fluid"><div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="./" target="_self"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="sem1">Semester 1</a></li>
+                <li><a href="sem3">Semester 3</a></li> 
+                <li><a href="sem5">Semester 5</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-content">
+            </ul>
+        </div></div>
+        </nav>
+    </div>
 
 	<img src="pics/wallpaper/bagpack.png" class="img-responsive frontpic" alt="Wallpaper">
 
@@ -202,5 +232,43 @@
 	<!-- Footer End -->
 
 </body>
+<style type="text/css">
+	.dcrbanner{
+        padding: 10px;
+        opacity: 0.7;
+        background: white;
+    }
+    .dcrbanner:hover{
+        opacity: 1;
+    }
+    .dcrname{
+        font-size: 35px;
+        color: black;
+        text-align: center;
+    }
+    .dcrlogo{
+        margin-top: 13px;
+        margin-left: 41%;
+    }
+    .niename{
+        margin-top: 5px;
+        font-size: 15px;
+        color: black;
+        text-align: center;
+    }
+    .smallscreen { display: none; }
+
+    @media screen and (max-width: 760px) {
+        .bigscreen { display: none; }
+        .smallscreen { display: block; } 
+        .dcrlogo { margin: -1.5% 5% 2% 2%; }
+        .dcrname { font-size: 25px; }
+    }
+    .semname{
+        color: white;
+        font-size: 18px;
+        width: 30%;
+    }
+</style>
 </html>
     
