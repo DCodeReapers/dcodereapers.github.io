@@ -246,7 +246,7 @@ tr:nth-child(even){background-color: #f2f2f2;}
     columns: 3;
 } @media screen and (max-width: 990px) { .part-col-3{-webkit-columns: 2;  -moz-columns: 2; columns: 2; } }
 
-li {
+#notification li {
 	margin-bottom: 10px;
 }
 /*ScrollBar*/
