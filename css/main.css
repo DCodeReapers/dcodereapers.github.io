@@ -68,9 +68,14 @@
 }
 .div2 a{
 	color: black;
+	font-style: italic;
 }
 .div1 a{
 	color: white;
+	font-style: italic;
+}
+#notification a{
+	color: green;
 }
 .heading{
 	text-align: center;
