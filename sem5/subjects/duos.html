@@ -41,75 +41,44 @@
 		<div class="row">
 			<div class="col-md-4">
 				<ol>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">UNIX System Overview</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Introduction: The Operating System, Knowing your machine, Linux
+and GNU.</a>
         					<ul class="subtopics">
-        					<li>Introduction
-        					<li>Unix architecture
-        					<li>Logging in
-        					<li>Files and Directories
-        					<li>Input and Output
-        					<li>Programs and Processes
-        					<li>User Identification
-        					<li>System calls and Library Functions  
-							<li>File I/O Introduction
-							<li>File Descriptors
-							<li>open Function
-							<li>create Function
-							<li>close Function
-							<li>lseek Function
-							<li>read Function
-							<li>write Function
-							<li>File Sharing
-							<li>Atomic Operations
-							<li>dup and dup2 
-							<li>SLE: UNIX Standardization, UNIX System Implementations
+        					<li>The Unix Architecture and Command Usage: The Unix
+							Architecture
+							<li> Features of Unix, POSIX and Single Unix
+							<li>Specifications, Locating Commands, Internal and External
+							<li>Commands, Command Structure, Flexibility of command usage.
+							<li>General Purpose Utilities: cal, date, echo, printf, bc, script, mailx,
+							passwd, who, uname, tty, stty.
+							<li>SLE: POSIX and the Single Unix Specifications
         					
         					</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Files and Directories</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">The Filesystem</a>
         					<ul class="subtopics">
-        					<li>Introduction
-        					<li>stat, fstat and lstat Functions
-							<li>Set-User-ID and Set-Group-ID
-							<li>Ownership of New Files and Directories
-							<li>access Function
-							<li>umask Function
- 							<li>chmod and fchmod Functions
- 							<li>Sticky Bit
- 							<li>chown,fchown and lchown Functions
- 							<li>File Size
- 							<li>File Truncation
- 							<li>File Systems
- 							<li>link, unlink, remove, and rename Functions
- 							<li>Symbolic Links
- 							<li>symlink and readlink Functions
- 							<li>File Times
- 							<li>utime Function
- 							<li>SLE: File Types, File Access Permissions
+								<li>The file, What is a File?
+								<li>The Parent-Child Relationship
+								<li> The HOME variable, pwd, cd, mkdir, rmdir, absolute pathname, relative pathnames
+								<li> cat, cp, rm, mv, more
+								<li> the lp subsystem, file, wc, od, cmp, comm diff.
+								<li>Basic File Attributes: ls-l: Listing file attribute, the - d option, File owner ship, File permission
+								<li> chmod, Directory permission,
+								<li>changing File ownership.
+								<li>The Vi editor Basic.
+								<li>SLE : Absolute and Relative Pathnames
         					         
 							</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Process Environment</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Essential of the programming</a>
         					<ul class="subtopics">
-            					<li>Introduction
-            					<li>main Function
-            					<li>Process Termination
-            					<li>Command-Line Arguments
-            					<li>Environment List
-            					<li>Memory Layout of a C Program, Shared Libraries 
-            					<li>Memory Allocation Environment Variables
-            					<li>setjmp and longjmp Functions
-            					<li>getr limit and setr limit Functions
-            					<li><b>Process Control:</b></li>
-            					<li>Introduction
-            					<li>Process Identifiers
-            					<li>fork Function
-            					<li>vfork Function
-            					<li>exit Functions
-            					<li>wait and waitpid Functions
-            					<li>waitid Function
-            					<li>wait3 and wait4 Functions
-            					<li>SLE: Race Conditions, exec Functions, Changing User IDs and Group IDs.  
+            					Shell scripts, read:making scripts interactive	
+								<li> using command line arguments, exit and Exit 						
+								<li>Logical operators
+								<li>Conditional statements, if, expr, case.
+								<li>Looping statements- While and For. Sample Shell scripts.
+								<li>SLE: Trap
+  
 
 
         					</ul>
@@ -118,59 +87,34 @@
 			</div>
 			<div class="col-md-4">
 				<ol start="4">
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Signals</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Introduction to the kernel</a>
         					<ul class="subtopics">
-            					<li>Introduction
-            					<li>Signal Concepts
-            					<li>signal Function
-            					<li>Reentrant Functions
-            					<li>Reliable Signal Terminology and Semantics
-            					<li>kill and raise Functions
-            					<li>alarm and pause Functions
-            					<li>Signal Sets
-            					<li>sigprocmask Function
-            					<li>sigpending Function
-            					<li>sigaction Function
-            					<li>sigsetjmp and siglongjmp Functions
-            					<li>sigsuspend Function
-            					<li>SLE: Unreliable signals, Interrupted System calls 
+            				<li>Architecture of the UNIX
+							<li>Operating System,Introduction to System Concepts, Kernel Data
+							<li>Structures, System Administration.
+							<li>THE BUFFER CACHE: Buffer Headers, Structure of the Buffer Pool						
+							<li> Scenarios for Retrievalof a Buffer, Reading and Writing Disk
+							<li>Blocks, Advantages and Disadvantages of the Buffer Cache.
+							<li>SLE: Advantages and Disadvantages of the Buffer Cache. 
         					</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Threads</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Internal represenation of files</a>
         					<ul class="subtopics">
-        					<li>Introduction
-        					<li>Thread Concepts
-        					<li>Thread Identification
-        					<li>Thread Creation
-        					<li>Thread Termination
-        					<li>Thread Synchronization.
-        					<li><b>Daemon Processes:</b>
-        					<li>Introduction
-        					<li>Daemon Characteristics
-        					<li>Coding Rules
-        					<li>Error Logging
-        					<li>SLE: Single-Instance Daemons, Daemon Conventions. 
+        					<li>Inodes, Structure of a Regular File
+							<li> Directories,Conversion of a Path Name to an Inode.
+							<li>SLE: Super Block. 
             					
         					</ul>
 					</li>
-					<li class="unitname"><a title="Click To Show/Hide Sub-Topics"> Interprocess Communication</a>
+					<li class="unitname"><a title="Click To Show/Hide Sub-Topics">The structure of processes </a>
         					<ul class="subtopics">
-        					<li>Introduction
-        					<li>Pipes, popen and pclose Functions
-        					<li>Coprocesses
-        					<li>FIFOs
-        					<li>XSI IPC
-        					<li>Message Queues
-        					<li>Semaphores
-        					<li>Shared Memory
-        					<li>Client-Server Properties
-        					<li><b>Network IPC:</b>
-        					<li>Sockets Introduction
-        					<li>Socket Descriptors
-        					<li>Addressing
-        					<li>Connection Establishment
-        					<li>SLE: Data Transfer, Socket Options. 
-        					
+        					 
+        					<li> Process States and Transitions
+							<li>Layout of SystemMemory
+						<li>The Context of a Process,
+						<li>Saving the Context of a Process, Sleep.
+						<li>PROCESS CONTROL: Process Creation, Signal, Process	Termination
+						<li>SLE: Sleep
             					
         					</ul>
 					</li>
