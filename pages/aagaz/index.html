@@ -243,23 +243,7 @@ function initializeClock(id, endtime) {
   updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
-var deadline = new Date(Date.parse(new Date()) + 14.6 * 16 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date("2016-09-25")) +  7.5 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 </script>
-<script type="text/javascript"> 
-        // $(document).ready(function() {
-            // document.getElementsByClassName("sample1")[0].style.height =
-            // document.getElementsByClassName("sample1")[1].style.height =
-            // document.getElementsByClassName("sample1")[2].style.height = window.innerHeight + "px";
-
-
-            // $("#getintouch").click(function(){
-                // $("#contactnumber").show();
-        //     });
-
-        //     $("#aboutdcr").click(function(){
-        //         $("#aboutdcrmodal").modal();
-        //     });
-        // });
-    //</script> 
 </html>
