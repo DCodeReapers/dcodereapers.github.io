@@ -33,7 +33,7 @@
 
 		<div class="row">
 			<!-- Change the pic to your subject related , just change the src to your pic's scr -->
-			<img src="sem6/pics/subjects/CN2.jpg" class="img-responsive frontpic">
+			<img src="sem6/pics/subjects/CN2.png" class="img-responsive frontpic">
 		</div>
 
 		<div class="div1" id="syllabus">
@@ -41,118 +41,100 @@
 			<div class="row">
 				<div class="col-md-4">
 					<ol>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Unix System Overview</a>
+						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Network Layer</a>
 	        					<ul class="subtopics">
-		            					<li> Introduction</li>
-		            					<li> Unix architecture</li>
-		            					<li> Logging in</li>
-										<li> Files and Directories</li>
-										<li> Input and Output</li>
-										<li> Programs and Processes User Identification System calls and Library Functions.</li>
-										<li> File I/O:Introduction</li>
-										<li> File Descriptors, open Function, create Function, close Function, lseek Function, read Function
-										     write Function, File Sharing, Atomic Operations, dup and dup2.</li>
-										<li>SLE: UNIX Standardization, UNIX System Implementation</li>
-								</ul>
+		            					<li> Network Layer: Network layer services: Packetizing, Routing and
+											 forwarding, other services</li>
+										<li> Packet switching: Datagram approach,Virtual circuit approach</li>
+										<li> Network Layer Performance: Delay,Throughput, Packet loss, Congestion control</li>
+										<li> IPv4 addresses: Address space, Classful addressing, Classless addressing, DHCP</li>
+									    <li> Forwarding of IP Packets: Forwarding based on destination address,label and Routers as Packet Switches</li>
+										<li> SLE: Network Address Translation (NVT)</li>
+								</ul>				            			            	
 						
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Files And Directories</a>
+						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Network Layer Protocols-1</a>
 	        					<ul class="subtopics">
-	            					<li>Introduction</li>
-	            					<li>stat, fstat, and lstat Functions</li>
-									<li>Set-User-ID and Set-Group-ID</li>
-									<li>Ownership of New Files and	Directories</li> 
-									<li>Access Function, umask Function, chmod and fchmod Functions, Sticky Bit, chown, fchown, and lchown Function</li>
-									<li>File Size,File Truncation, File Systems</li >
-									<li>link, unlink, remove, and rename Functions, Symbolic Links, 
-									symlink and readlink Function,File Times, utime Function.
-	                                <li>SLE: File Types, File Access Permiss</li>
-	        					</ul>
-						</li>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Process Environment</a>
+		            					<li> Internet Protocol (IP): Datagram format, fragmentation, options, Security of IPv4 datagrams
+						                <li> ICMPv4: Messages, debugging tools, ICMP Checksum</li>
+						                <li> Mobile IP: Addressing, Agents, Three phases, Inefficiency in Mobile IP</li>
+							            <li> Unicast Routing: Introduction, General Idea, Least cost routing</li>
+							            <li> Routing Algorithms: Distance Vector Routing, Link State routing</li>
+							            <li> SLE:Path Vector Routing Algorithm</li>
+							    </ul>
+					    <li class="unitname"><a title="Click To Show/Hide Sub-Topics">Network Layer Protocols-2</a>
 	        					<ul class="subtopics">
-	            					<li>Introduction</li>
-	            					<li>Main Function</li>
-	            					<li>Process Termination</li> 
-	            					<li>Command-Line Arguments</li>
-	            					<li>Environment List</li>
-	            					<li>Memory Layout of a C Program</li>
-	            					<li>Shared Libraries</li>
-	            					<li>Memory Allocation</li>
-	            					<li>Environment Variables</li>
-	            					<li>Setjmp and longjmp Functions, getr limit and setr limit Functions</li>
-	            					<li>Process Control: Introduction</li>
-	            					<li>Process Identifiers</li>
-	            					<li>fork Function,vfork Function, exit Functions, wait and waitpid Functions, 
-	            					    waitid Function, wait3 and wait4 Functions.</li>
-									<li>SLE: Race Conditions, exec Functions, Changing User IDs and Group IDs.</li>
-						        </ul>
-					   </ol>
-				</div>
-				<div class="col-md-4">
-					<ol start="4">
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Signals</a>
-	        					<ul class="subtopics">
-	            					<li>Introduction</li>
-	            					<li>Signal Concepts</li>
-	            					<li>Signal Function, Reentrant Functions, Reliable Signal Terminology and Semantics, 
-										kill and sigprocmask Function, sigpending Function, sigaction Function,
-										sigsetjmp and siglongjmp Functions, sigsuspend Function.</li>
-									<li>SLE: Unreliable signals, Interrupted System </li>
-			            					
-	        					</ul>
-						</li>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Threads</a>
-	        					<ul class="subtopics">
-	            					<li>Introduction</li> 
-	            					<li>Thread Concepts</li>
-	            					<li>Thread Identification</li>
-									<li>Thread Creation</li>
-									<li>Thread Termination</li>
-									<li>Thread Synchronization</li>
-									<li>Daemon Processes: Introduction</li>
-									<li>Daemon Characteristics</li>
-									<li>Coding Rules</li>
-									<li>Error Logging</li>
-									<li>SLE: Single-Instanance Daemons</li>
-									<li>Daemon Conventions</li>  
-	            					            					
-	        					</ul>
-						</li>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Interprocess Communication</a>
-	        					<ul class="subtopics">
-	            					<li>Introduction</li>
-	            					<li>Pipes, popen and pclose Functions</li>
-	            					<li>Coprocesses</li>
-	            					<li>FIFOs,XSI IPC</li> 
-	            					<li>Message,Queues, Semaphores,Shared Memory,Client-Server Properties.</li>
-									<li>Network IPC: Sockets Introduction 
-									<li>Socket Descriptors</li>
-									<li>Addressing</li>
-									<li>Connection Establishment</li>
-									<li>SLE: Data Transfer, Socket Options.</li>
-	        					</ul>
-						</li>
-					</ol>	
-				</div>
-				 <div class="col-md-4">
-					<ul>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">First Internal</a>
-	        					<ul class="subtopics">
-	            					<li>Not Yet Announced</li>
-	        					</ul>
-						</li>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Mid Semster</a>
-	        					<ul class="subtopics">
-	            					<li>Not Yet Announced</li>
-	        					</ul>
-						</li>
-						<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Makeup Internal</a>
-	        					<ul class="subtopics">
-	            					<li>Not Yet Announced</li>
-	        					</ul>
-						</li>
-					</ul>	
-				</div> 
+		            					<li> Unicast routing Protocols: Internet Structure, RIP ,OSPF</li>
+		            					<li> Multicast Routing: Introduction, Unicasting, Multicasting, broadcasting</li>
+		            					<li> Multicasting Basics: Multicast address, Delivery at Data link layer,
+		            					     Collecting information about groups,Multicast forwarding</li>
+		            					<li> Intra-domain Multicast Protocols :	DVMRP,MOSF,PIM,Inter-Domain Multicast Protocols</li>
+		            					<li> IGMP: Messages,Propagation of Membership Information and Encapsulation.</li>
+										<li> SLE:BGP</li>
+							    </ul>
+				    </ol>
+
+			   </div> 
+					<div class="col-md-4">
+						<ol start="4">
+							<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Next Generation IP</a>
+		        					<ul class="subtopics">
+		            					<li> Next Generation IP:IPv6 Addressing: Representation, Address space, Address space allocation,
+		            					     Auto configuration and Renumbering</li>
+		            					<li> The IPv6 Protocol: Packet Format, Extension Header</li>
+		            					<li> The ICMPv6 Protocol: Error Reporting Messages,	Information Messages, Neighbor Discovery Messages
+		            					     and Group Membership Messages.</li>
+									    <li> Transport Layer-1:Introduction to Transport layer: Transport layer services, 
+									         Connection less and connection oriented protocols</li>
+										<li> Transport layer protocols: Simple protocol, Stop-and-WaitProtocol,
+											 Go-Back-Protocol, Selective Repeat Protocol</li>
+										<li> SLE: Transition from IPv4 to IPv6</li>
+		        					</ul>
+							</li>
+							<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Transport Layer Protocol-2</a>
+		        					<ul class="subtopics">
+		            					<li> Transport Layer Protocol-2: Introduction: Services, Port Numbers</li>
+		            					<li> User Datagram Protocol: User Datagram, UDP Services,UDP Applications</li>
+		            					<li> Transmission Control Protocol: TCP services,TCP Features, Segment, A TCP Connection,
+		            					     State Transition Diagram, Windows in TCP, Flow control, Error control, TCP	Congestion control
+		            					     TCP timers and options</li>
+		            					<li> Application Layer-1:Introduction : Providing Services, Application Layer Paradigms,
+		            					     Clent-server paradigm, Peer-to-Peer Paradigm</li>
+	                                    <li> WWW and HTTP: World Wide Web, Hyper Text Transfer Protocol</li>
+                                        <li> SLE: Web documents</li>
+													
+		        					</ul>
+							</li>
+							<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Application Layer-2:FTP</a>
+		        					<ul class="subtopics">
+		            					<li> Two Connections, Control connection, Data connection, Security for FTP</li>
+		            					<li> Electronic Mail: Architecture, Web Based Mai, E-Mail security</li>
+		            					<li> Domain Name System: Name space, DNS in Internet, Resolution, Caching, Resource Records,
+											 DNS Messages, Registras, DDNS, Security of DNS</li>
+										<li> Network Management: Introduction</li>
+										<li> SNMP:Managers and Agents, Management Components, SMI, MIB, and SNMP. </li>
+										<li> SLE:ASN.1 Data types</li>								
+						</ol>	
+					</div>
+					 <div class="col-md-4">
+						<ul>
+							<li class="unitname"><a title="Click To Show/Hide Sub-Topics">First Internal</a>
+		        					<ul class="subtopics">
+		            					<li>Not Yet Announced</li>
+		        					</ul>
+							</li>
+							<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Mid Semster</a>
+		        					<ul class="subtopics">
+		            					<li>Not Yet Announced</li>
+		        					</ul>
+							</li>
+							<li class="unitname"><a title="Click To Show/Hide Sub-Topics">Makeup Internal</a>
+		        					<ul class="subtopics">
+		            					<li>Not Yet Announced</li>
+		        					</ul>
+							</li>
+						</ul>	
+					</div> </li>
+				                </ul>
 			</div> 
 		</div>	
 		<div class="div2" id="notes">
@@ -193,44 +175,12 @@
 						 <a href="https://drive.google.com/uc?export=download&id=0B0WI5qdtPh1iUjVQc0lhR3liNlk"><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
 					  </div>
 				      <div class="row stuff-title">
-					      <a href="https://drive.google.com/file/d/0B0WI5qdtPh1iTTI0b3lRRzF3NmM/view?usp=sharing" title="View Online">Unix System Overview</a>
+					      <a href="https://drive.google.com/file/d/0B2QeHfocL6sIZXdMYTZaeTFhQVk/view?usp=sharing" title="View Online">Data And Computer Communications.8e.William Stalings</a>
 				      </div>
 				 </div>
-				 <div class="col-md-2">
-					<div class="row">
-						<a href="https://drive.google.com/uc?export=download&id=0B0WI5qdtPh1iUjVQc0lhR3liNlk"><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
-					</div>
-					<div class="row stuff-title">
-					     <a href="https://drive.google.com/file/d/0B0WI5qdtPh1iajRYSWJ0eXVVS2M/view?usp=sharing" title="View Online">Files And Directories</a>
-					</div>
-				   </div>
-					 <div class="col-md-2">
-					<div class="row">
-						<a href="https://drive.google.com/uc?export=download&id=0B0WI5qdtPh1iUjVQc0lhR3liNlk"><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
-					</div>
-					<div class="row stuff-title">
-					     <a href="https://drive.google.com/file/d/0B2QeHfocL6sIUzR5QVYyY3hyeDg/view?usp=sharing" title="View Online">The Design Of The Unix Operating System</a>
-					</div>
-					</div>
-					 <div class="col-md-2">
-					<div class="row">
-						<a href="https://drive.google.com/uc?export=download&id=0B0WI5qdtPh1iUjVQc0lhR3liNlk"><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
-					</div>
-					<div class="row stuff-title">
-					     <a href="https://drive.google.com/file/d/0B2QeHfocL6sIUzR5QVYyY3hyeDg/view?usp=sharing" title="View Online">Advanced Programming In The Unix Environment</a>
-					</div>
-					</div>
-					 <div class="col-md-2">
-					<div class="row">
-						<a href="https://drive.google.com/uc?export=download&id=0B0WI5qdtPh1iUjVQc0lhR3liNlk"><img src="pics/logo/ebook.png" title="Download" alt="Download"></a>
-					</div>
-					<div class="row stuff-title">
-					     <a href="https://drive.google.com/file/d/0B2QeHfocL6sIUzR5QVYyY3hyeDg/view?usp=sharing" title="View Online">Concepts And Applications</a>
-					</div>
-					</div>
-				</div>
 			</div>
-			</div>
+		</div>
+			
            	<div class="div2" id="videos">
 			<h1 class="heading">Videos</h1>
 			<div class="row commingsoon"> Working On The Content ...</div>
