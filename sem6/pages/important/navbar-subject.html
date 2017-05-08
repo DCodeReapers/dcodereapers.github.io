@@ -1,0 +1,61 @@
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+   		<div class="navbar-header">
+   	  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+   	  		<span class="icon-bar"></span>
+   	  		<span class="icon-bar"></span>
+   	  		<span class="icon-bar"></span> 
+   	  	</button>
+   			<a class="navbar-brand" href="sem6" title="Back To Home Page" target="_self"><img src="pics/logo/dcrwhite.png" class="dcrlogo"></a>
+   		</div>
+	 		<div class="collapse navbar-collapse" id="myNavbar">
+   	  	<ul class="nav navbar-nav">
+   				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="navbar-content"></span><span class="caret"></span></a>
+       			<ul class="dropdown-menu">
+              <li><a href="sem6/subjects/USP.html" target="_self">Unix System Programming</a></li>
+              <li><a href="sem6/subjects/CN.html" target="_self">Computer Networks</a></li>
+        			<li><a href="sem6/subjects/cg.html" target="_self">Software Engineering</a></li>
+        			<li><a href="sem6/subjects/dbms.html" target="_self">Python Programming</a></li>
+					    <li><a href="sem6/subjects/duos.html" target="_self">Web Technologies And Applications</a></li>
+        			<li><a href="sem6/subjects/os.html" target="_self">Big Data Analytics</a></li>
+       			</ul>
+   				</li>
+   			</ul>
+   			<ul class="nav navbar-nav navbar-right">
+					<li><a href="#syllabus" class="smoothscroll">Syllabus</a></li>
+					<li><a href="#notes" class="smoothscroll">Notes</a></li> 
+					<li><a href="#ebooks" class="smoothscroll">e-Books</a></li>
+					<li><a href="#videos" class="smoothscroll">Videos</a></li> 
+					<li><a href="#questionpapers" class="smoothscroll">Question Papers</a></li> 
+					<li><a href="#rta" class="smoothscroll">Real Time Application</a></li> 
+				</ul>
+   		</div>
+   	</div>
+  </nav>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#navbar-content').html($('#navbar-extra').html());
+     $(".smoothscroll").anchorAnimate();
+  });
+
+    jQuery.fn.anchorAnimate = function(settings) {
+  settings = jQuery.extend({
+  speed : 700
+  }, settings); 
+
+  return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {  
+      event.preventDefault()
+      var locationHref = window.location.href
+      var elementClick = $(caller).attr("href")
+    
+      var destination = $(elementClick).offset().top - 5000;
+      $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+        window.location.hash = elementClick
+      });
+      return false;
+    })
+  })
+};
+  </script>

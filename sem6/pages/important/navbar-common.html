@@ -1,0 +1,63 @@
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+ 		<!-- Main Navbar Start-->
+ 		<div class="container-fluid">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+      		</button>
+      		<a class="navbar-brand" href="sem6" target="_self"><img src="pics/logo/dcrwhite.png" class="dcrlogo"></img></a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+          <li><a href="./" target="_self"><span class="glyphicon glyphicon-home" title="Home Page"></span></a></li>
+      		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">e-Library<span class="caret"></span></a>
+      			<ul class="dropdown-menu">
+      			   	<li><a href="//sem6/subjects/USP.html" >Unix System Programming</a></li>
+		            <li><a href="sem6/subjects/cd.html">Software Engineering</a></li>
+		            <li><a href="sem6/subjects/cg.html" target="_self">Computer Networks</a></li>
+		            <li><a href="sem6/subjects/dbms.html">Web Technologies And Applications</a></li>
+		            <li><a href="sem6/subjects/duos.html">Python Programming</a></li>
+		            <li><a href="sem6/subjects/os.html">Big Data Analytics</a></li>
+              
+      			</ul>
+     	  	</li>
+    			<li><a href="sem6/pages/achievements/">Achievers</a></li> 
+          <li><a href="sem6/pages/memories/">Memories</a></li> 
+          <li><a href="pages/bagpack/">Bagpack</a></li>
+          <li><a href="pages/developers/">Developers</a></li>
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right" id="navbar-content">
+				</ul>
+    	</div>
+    </div>
+  </nav>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#navbar-content').html($('#navbar-extra').html());
+      $(".smoothscroll").anchorAnimate();
+  });
+
+    jQuery.fn.anchorAnimate = function(settings) {
+  settings = jQuery.extend({
+  speed : 700
+  }, settings); 
+
+  return this.each(function(){
+    var caller = this
+    $(caller).click(function (event) {  
+      event.preventDefault()
+      var locationHref = window.location.href
+      var elementClick = $(caller).attr("href")
+    
+      var destination = $(elementClick).offset().top - 50;
+      $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+        window.location.hash = elementClick
+      });
+      return false;
+    })
+  })
+};
+  </script>
+	<!-- Main Navbar End -->
